@@ -1,0 +1,59 @@
+# perfil.yaml — lo llena el AGENTE durante la entrevista inicial (doc 02).
+# Regla: todo campo vacío o marcado "no_confirmado" NO se usa para postular.
+# NUNCA subas este archivo ya llenado a un repositorio público.
+
+datos_base:
+  nombre_completo: ""          # tal como aparece en documentos oficiales
+  ciudad: ""
+  zona_o_colonia: ""
+  telefono: ""                 # el que va impreso en el CV
+  correo_contacto: ""          # el que va impreso en el CV
+  correo_sistema: ""           # el de las cuentas de los portales
+  linkedin: ""
+  disponibilidad: ""           # ej. "15 días", "inmediata si se requiere"
+
+educacion:
+  - grado: ""                  # ej. "PTB en Contabilidad"
+    institucion: ""
+    anio_termino: ""           # solo si está confirmado; si no, dejar vacío
+    estado: "no_confirmado"    # confirmado | no_confirmado
+
+experiencia:
+  - empresa: ""
+    puesto: ""
+    inicio: ""                 # mes/año
+    fin: ""                    # mes/año o "actualidad"
+    funciones_clave: []        # verbos + actividad
+    cifras: []                 # montos, volúmenes, resultados medibles (¡solo reales!)
+    herramientas: []
+    estado: "no_confirmado"
+
+habilidades:
+  herramientas_y_sistemas: []  # nombre oficial: CONTPAQi, Excel avanzado, SAP...
+  habilidades_tecnicas: []
+
+idiomas:
+  - idioma: "Inglés"
+    nivel_real: ""             # A2 | B1 | B2 | C1 — el REAL, confirmado
+    examen: ""                 # ej. "EF SET" + puntaje, si existe
+    estado: "no_confirmado"
+
+dinero:
+  piso_mxn_mes: null           # por debajo de esto NO se postula
+  ultimo_sueldo:               # solo se usa si un portal lo exige
+    monto: null
+    moneda: ""                 # MXN | USD
+  acepta_pago_usd: null        # true | false
+
+forma_de_trabajo:
+  remoto: null                 # true | false
+  presencial: ""               # ej. "solo si supera en X a mi empleo actual"
+  hibrido: ""
+  zona_maxima: ""              # hasta dónde se desplaza
+  turnos_no: []
+  viajar: ""                   # sí | no | depende
+  reubicarse: ""
+
+datos_sensibles:               # ⚠️ archivo local cifrado; jamás al repo público
+  documento_id: ""             # solo si el usuario aceptó darlo; uso: solo si el portal lo exige
+  referencias: "no"            # por defecto "no": se saltan vacantes que las exigen

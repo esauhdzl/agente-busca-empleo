@@ -1,0 +1,11 @@
+# ⚠️ TUS DATOS REALES NUNCA VAN EN UN REPO PÚBLICO
+# Si clonas esta guía para tu uso personal, mantén tus archivos llenos en local:
+perfil.yaml
+perfil-llenado.yaml
+banco-de-respuestas.md
+applications-log.md
+cv/
+*.pdf
+.env
+*credenciales*
+*curp*
